@@ -1,0 +1,5 @@
+Metrics server listening on :8080
+Worker started. Waiting for tasks...
+Processing task: c695e686-ecb6-4a2a-824c-601b6fc1cff7 (Type: retry_test_2, Retry: 1)
+Task failed: c695e686-ecb6-4a2a-824c-601b6fc1cff7. Error: simulated failure
+Processing task: c695e686-ecb6-4a2a-824c-601b6fc1cff7 (Type: retry_test_2, Retry: 2)
