@@ -11,30 +11,30 @@ DistributedQ is a **production-ready distributed task queue** written in Go, des
 ## 🚀 Features
 
 ### Core Functionality
-- ✅ **Distributed Architecture**: Horizontally scalable worker pool
-- ✅ **Atomic Operations**: Uses Redis `BLMove` for exactly-once delivery semantics
-- ✅ **Type-Safe Task Processing**: Generic task interface with type routing
+- **Distributed Architecture**: Horizontally scalable worker pool
+- **Atomic Operations**: Uses Redis `BLMove` for exactly-once delivery semantics
+- **Type-Safe Task Processing**: Generic task interface with type routing
 
 ### Reliability
-- ✅ **Exponential Backoff Retry**: Automatic retry with `2^n * 100ms` delay
-- ✅ **Dead Letter Queue (DLQ)**: Failed tasks preserved for inspection/replay
-- ✅ **Graceful Shutdown**: Context-aware cancellation with signal handling
-- ✅ **Atomic Scheduler**: Lua scripts prevent race conditions in delayed task processing
-- ✅ **Rate Limiting**: Token bucket algorithm per task type
-- ✅ **Priority Queues**: High, Default, and Low priority channels
+- **Exponential Backoff Retry**: Automatic retry with `2^n * 100ms` delay
+- **Dead Letter Queue (DLQ)**: Failed tasks preserved for inspection/replay
+- **Graceful Shutdown**: Context-aware cancellation with signal handling
+- **Atomic Scheduler**: Lua scripts prevent race conditions in delayed task processing
+- **Rate Limiting**: Token bucket algorithm per task type
+- **Priority Queues**: High, Default, and Low priority channels
 
 ### Observability
-- ✅ **Prometheus Metrics**: Queue depth, throughput, latency, and worker utilization
-- ✅ **Grafana Dashboards**: Pre-configured with visualization panels
-- ✅ **Task-Level Tracing**: Per-type metrics for routing and debugging
-- ✅ **Task-Level Tracing**: Per-type metrics for routing and debugging
-- ✅ **Task Result Storage**: Store and retrieve task execution results
+- **Prometheus Metrics**: Queue depth, throughput, latency, and worker utilization
+- **Grafana Dashboards**: Pre-configured with visualization panels
+- **Task-Level Tracing**: Per-type metrics for routing and debugging
+- **Task-Level Tracing**: Per-type metrics for routing and debugging
+- **Task Result Storage**: Store and retrieve task execution results
 
 ### 🖥️ Web Dashboard
-- ✅ **Real-time Stats**: View queue depths and active tasks
-- ✅ **Task Inspector**: Browse tasks in any queue (including history)
-- ✅ **Task History**: View completed tasks in `completed_queue`
-- ✅ **Control Panel**: Enqueue tasks directly from the UI for testing
+- **Real-time Stats**: View queue depths and active tasks
+- **Task Inspector**: Browse tasks in any queue (including history)
+- **Task History**: View completed tasks in `completed_queue`
+- **Control Panel**: Enqueue tasks directly from the UI for testing
 
 ---
 
@@ -462,12 +462,12 @@ docker-compose -f docker-compose.prod.yml up -d --build
 ```
 
 **Features:**
-- ✅ Health checks for all services
-- ✅ Resource limits and reservations
-- ✅ Data persistence with volumes
-- ✅ Redis authentication
-- ✅ Horizontal worker scaling (3 replicas by default)
-- ✅ 30-day Prometheus retention
+- Health checks for all services
+- Resource limits and reservations
+- Data persistence with volumes
+- Redis authentication
+- Horizontal worker scaling (3 replicas by default)
+- 30-day Prometheus retention
 
 ### Docker Deployment (Custom)
 
@@ -571,18 +571,18 @@ go run benchmark/main.go -tasks 100000 -workers 10
 
 ---
 
-## 🚀 Next Steps (Future Enhancements)
+## 🚀 Next Steps
 
 The following features are planned for future releases to make DistributedQ even more powerful and production-ready:
 
 The following features are planned for future releases to make DistributedQ even more powerful and production-ready:
 
-### 🔄 Distributed Consensus
+### Distributed Consensus
 - **Description**: Leader election for multiple server instances
 - **Use Case**: High availability scheduling
 - **Effort**: High
 
-### 📦 Client Libraries
+### Client Libraries
 - **Description**: SDKs for Python and Node.js
 - **Use Case**: Easier integration for non-Go consumers
 - **Effort**: Medium
